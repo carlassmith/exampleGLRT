@@ -1,0 +1,249 @@
+﻿Build started 9/24/2015 22:20:30.
+     1>Project "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\gpuGaussMLEv3.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmp5290decdae7f452e98cf9fbc0044c658.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" -clean
+         
+         C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" -clean 
+         kernel.cu
+       CudaClean:
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmp778c8bd2ea4f4e188ac123b59f0384e5.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\wrapper.cu" -clean
+         
+         C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\wrapper.cu" -clean 
+         wrapper.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\wrapper.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmp1d2bdad7d0ae4d7fa773061e97c1dce9.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu"
+         
+         C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" 
+         ptxas info    : 11 bytes gmem, 8 bytes cmem[14]
+         ptxas info    : Function properties for _Z15kernel_dalphadzffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i
+             400 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 63 registers, 552 bytes cumulative stack size, 92 bytes cmem[0]
+         ptxas info    : Function properties for _Z3powff
+             40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_CalcLLRPropfffPf
+             40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Function properties for _Z13avgDerivativeiPfS_S_
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z27kernel_DerivativeIntGauss1DiffffPfS_
+             48 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_GaussFMaxMin3DiiffPKfPfS1_
+             80 bytes stack frame, 76 bytes spill stores, 76 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF1DSigmaiffffPfS_
+             40 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643minEdd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z14kernel_MatInvNPfS_S_i
+             152 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_DxIntGaus1DiffPfS_
+             48 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_GaussFMaxMin2DifPKfPfS1_
+             64 bytes stack frame, 64 bytes spill stores, 64 bytes spill loads
+         ptxas info    : Function properties for _Z30kernel_DerivativeIntGaussPSF1DifffffPfS_
+             48 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i
+             512 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 56 registers, 664 bytes cumulative stack size, 84 bytes cmem[0]
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_DsIntGaus1DiffPfS_
+             40 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z13kernel_MLEFitPKffiiPfS1_S1_i
+             288 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 55 registers, 440 bytes cumulative stack size, 84 bytes cmem[0]
+         ptxas info    : Function properties for _Z3erff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF3DSigmaiiifffffffffPfS_S_S_
+             88 bytes stack frame, 68 bytes spill stores, 68 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEfd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7norminvfff
+             32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Function properties for _Z32kernel_DerivativeIntGauss1DSigmaiffffPfS_
+             48 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_CenterofMass3DiiPKfPfS1_S1_fff
+             40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Function properties for _Z30kernel_DerivativeIntGaussPSF1DiffffPfS_
+             40 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643minEff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_MatrixMultPfPiS_S0_S_S0_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z12kernel_alphaffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z18kernel_MLEFitSigmaPffiiS_S_S_i' for 'sm_20'
+         ptxas info    : Function properties for _Z18kernel_MLEFitSigmaPffiiS_S_S_i
+             392 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 55 registers, 576 bytes cumulative stack size, 84 bytes cmem[0]
+         ptxas info    : Function properties for _Z3expf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z31kernel_DerivativeIntGaussPSF2DziiPKfffffffffPfS1_S1_S1_
+             144 bytes stack frame, 116 bytes spill stores, 116 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEdf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7normpdffff
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_IntGauss1Diff
+             16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_CenterofMass2DiPKfPfS1_ff
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_d2alphadz2ffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i
+             680 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 62 registers, 952 bytes cumulative stack size, 92 bytes cmem[0]
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z32kernel_DerivativeIntGauss2DSigmaiiffffffPfS_
+             64 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Compiling entry function '_Z15kernel_MLERatioPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z15kernel_MLERatioPKffiiPfS1_S1_i
+             112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 52 registers, 264 bytes cumulative stack size, 84 bytes cmem[0]
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF2DSigmaiiffffffPfS_
+             64 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7normcdffff
+             16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+         ptxas info    : 11 bytes gmem
+         ptxas info    : Function properties for _Z15kernel_dalphadzffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i
+             400 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 63 registers, 552 bytes cumulative stack size, 380 bytes cmem[0]
+         ptxas info    : Function properties for _Z3powff
+             40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_CalcLLRPropfffPf
+             40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Function properties for _Z13avgDerivativeiPfS_S_
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z27kernel_DerivativeIntGauss1DiffffPfS_
+             48 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_GaussFMaxMin3DiiffPKfPfS1_
+             80 bytes stack frame, 76 bytes spill stores, 76 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF1DSigmaiffffPfS_
+             40 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643minEdd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z14kernel_MatInvNPfS_S_i
+             152 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_DxIntGaus1DiffPfS_
+             48 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_GaussFMaxMin2DifPKfPfS1_
+             64 bytes stack frame, 64 bytes spill stores, 64 bytes spill loads
+         ptxas info    : Function properties for _Z30kernel_DerivativeIntGaussPSF1DifffffPfS_
+             48 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i
+             512 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 56 registers, 664 bytes cumulative stack size, 372 bytes cmem[0]
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z18kernel_DsIntGaus1DiffPfS_
+             40 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z13kernel_MLEFitPKffiiPfS1_S1_i
+             288 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 55 registers, 440 bytes cumulative stack size, 372 bytes cmem[0]
+         ptxas info    : Function properties for _Z3erff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF3DSigmaiiifffffffffPfS_S_S_
+             88 bytes stack frame, 68 bytes spill stores, 68 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEfd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7norminvfff
+             32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Function properties for _Z32kernel_DerivativeIntGauss1DSigmaiffffPfS_
+             48 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_CenterofMass3DiiPKfPfS1_S1_fff
+             40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+         ptxas info    : Function properties for _Z30kernel_DerivativeIntGaussPSF1DiffffPfS_
+             40 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643minEff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_MatrixMultPfPiS_S0_S_S0_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z12kernel_alphaffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z18kernel_MLEFitSigmaPffiiS_S_S_i' for 'sm_30'
+         ptxas info    : Function properties for _Z18kernel_MLEFitSigmaPffiiS_S_S_i
+             392 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 55 registers, 576 bytes cumulative stack size, 372 bytes cmem[0]
+         ptxas info    : Function properties for _Z3expf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z31kernel_DerivativeIntGaussPSF2DziiPKfffffffffPfS1_S1_S1_
+             144 bytes stack frame, 116 bytes spill stores, 116 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEdf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7normpdffff
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_IntGauss1Diff
+             16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_CenterofMass2DiPKfPfS1_ff
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_d2alphadz2ffff
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i
+             680 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 62 registers, 952 bytes cumulative stack size, 380 bytes cmem[0]
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z32kernel_DerivativeIntGauss2DSigmaiiffffffPfS_
+             64 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Compiling entry function '_Z15kernel_MLERatioPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z15kernel_MLERatioPKffiiPfS1_S1_i
+             112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 52 registers, 264 bytes cumulative stack size, 372 bytes cmem[0]
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z35kernel_DerivativeIntGaussPSF2DSigmaiiffffffPfS_
+             64 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_000021c4_00000000_8_kernel_compute_30_cpp1_ii_664f16643maxEff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z7normcdffff
+             16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+         kernel.cu
+       CudaBuild:
+         Compiling CUDA source file wrapper.cu...
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmp594eb4bd93654c6396ae48483c3cf6d8.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\wrapper.cu"
+         
+         C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\wrapper.cu" 
+         ptxas info    : 0 bytes gmem
+         ptxas info    : 0 bytes gmem
+         wrapper.cu
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc\\" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt mexFunction.cpp
+         mexFunction.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Debug\gpuGaussMLEv3.res" gpuGaussMLEv3.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.mexw64" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" cudart.lib libmex.lib libmat.lib libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"matlab.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.lib" /MACHINE:X64 /DLL x64\Debug\kernel.cu.obj
+         x64\Debug\wrapper.cu.obj
+         x64\Debug\gpuGaussMLEv3.res
+         x64\Debug\mexFunction.obj
+            Creating library C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.lib and object C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.exp
+         gpuGaussMLEv3.vcxproj -> C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\x64\Debug\gpuGaussMLEv3.mexw64
+     1>Done Building Project "C:\Users\Carlas Smith\Dropbox (RTI_PSB_Umass)\gpudel\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\gpuGaussMLEv3.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.24

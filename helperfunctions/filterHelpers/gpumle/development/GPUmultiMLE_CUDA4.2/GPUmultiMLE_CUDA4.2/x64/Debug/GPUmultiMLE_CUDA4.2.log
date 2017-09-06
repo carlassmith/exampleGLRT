@@ -1,0 +1,451 @@
+﻿Build started 7/30/2012 11:40:34 AM.
+     1>Project "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\GPUmultiMLE_CUDA4.2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\fitmultimain.cu 
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUCRLB.cu 
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUgenerateblobs.cu 
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUmultifit.cu 
+       AddCudaCompilePropsDeps:
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "Keep".
+         Found "KeepDir".
+         Found "NvccCompilation".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "CInterleavedPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "AdditionalCompilerOptions".
+         Found "Defines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       AddCudaCompilePropsDeps:
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "Keep".
+         Found "KeepDir".
+         Found "NvccCompilation".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "CInterleavedPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "AdditionalCompilerOptions".
+         Found "Defines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       AddCudaCompilePropsDeps:
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "Keep".
+         Found "KeepDir".
+         Found "NvccCompilation".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "CInterleavedPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "AdditionalCompilerOptions".
+         Found "Defines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       AddCudaCompilePropsDeps:
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "Keep".
+         Found "KeepDir".
+         Found "NvccCompilation".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "CInterleavedPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "AdditionalCompilerOptions".
+         Found "Defines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       CudaBuild:
+         Compiling CUDA source file fitmultimain.cu...
+         cmd.exe /C "C:\Users\prelich\AppData\Local\Temp\0f9912fffad84885b49a34a3cbff89bf.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\fitmultimain.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\fitmultimain.cu"
+         
+         C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\fitmultimain.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\fitmultimain.cu" 
+     1>CUDACOMPILE : nvcc warning : Option '--opencc-options (-Xopencc)' is obsolete and ignored, when targeting compute_20, sm_20, or higher
+         fitmultimain.cu
+         tmpxft_00001c0c_00000000-3_fitmultimain.compute_20.cudafe1.gpu
+         tmpxft_00001c0c_00000000-7_fitmultimain.compute_20.cudafe2.gpu
+         fitmultimain.cu
+         tmpxft_00001c0c_00000000-0_fitmultimain.compute_10.cudafe1.gpu
+         tmpxft_00001c0c_00000000-11_fitmultimain.compute_10.cudafe2.gpu
+         fitmultimain.cu
+         ptxas info    : Compiling entry function '__cuda_dummy_entry__' for 'sm_20'
+         ptxas info    : Used 2 registers, 32 bytes cmem[0]
+         fitmultimain.cu
+         ptxas info    : Compiling entry function '__cuda_dummy_entry__' for 'sm_10'
+         ptxas info    : Used 0 registers
+         tmpxft_00001c0c_00000000-3_fitmultimain.compute_20.cudafe1.cpp
+         tmpxft_00001c0c_00000000-20_fitmultimain.compute_20.ii
+       CudaBuild:
+         Compiling CUDA source file GPUCRLB.cu...
+         cmd.exe /C "C:\Users\prelich\AppData\Local\Temp\83595b5e613642f8a0a8ec1ebbf6c9dd.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUCRLB.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUCRLB.cu"
+         
+         C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUCRLB.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUCRLB.cu" 
+     1>CUDACOMPILE : nvcc warning : Option '--opencc-options (-Xopencc)' is obsolete and ignored, when targeting compute_20, sm_20, or higher
+         GPUCRLB.cu
+         tmpxft_00001844_00000000-3_GPUCRLB.compute_20.cudafe1.gpu
+         tmpxft_00001844_00000000-7_GPUCRLB.compute_20.cudafe2.gpu
+         GPUCRLB.cu
+         tmpxft_00001844_00000000-0_GPUCRLB.compute_10.cudafe1.gpu
+         tmpxft_00001844_00000000-11_GPUCRLB.compute_10.cudafe2.gpu
+         GPUCRLB.cu
+         ptxas info    : Compiling entry function '_Z11kernel_CRLBiiiiifffPfS_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z11kernel_CRLBiiiiifffPfS_S_S_S_S_
+             80 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3absf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3expf
+             32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Function properties for _Z3powff
+             128 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN75_INTERNAL_53_tmpxft_00001844_00000000_5_GPUCRLB_compute_20_cpp1_ii_b2a7facb3erfEf
+             48 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for __exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fadd_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float_as_int
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fmaf_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fmul_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __int_as_float
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for fabsf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for rsqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for truncf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 55 registers, 15840+0 bytes smem, 112 bytes cmem[0]
+         GPUCRLB.cu
+         ptxas info    : Compiling entry function '_Z11kernel_CRLBiiiiifffPfS_S_S_S_S_' for 'sm_10'
+         ptxas info    : Used 30 registers, 160+0 bytes lmem, 15920+16 bytes smem, 16 bytes cmem[1]
+         tmpxft_00001844_00000000-3_GPUCRLB.compute_20.cudafe1.cpp
+         tmpxft_00001844_00000000-20_GPUCRLB.compute_20.ii
+       CudaBuild:
+         Compiling CUDA source file GPUgenerateblobs.cu...
+         cmd.exe /C "C:\Users\prelich\AppData\Local\Temp\e4604e7f3c3b464296dcdf2b06da7ac1.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUgenerateblobs.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUgenerateblobs.cu"
+         
+         C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUgenerateblobs.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUgenerateblobs.cu" 
+     1>CUDACOMPILE : nvcc warning : Option '--opencc-options (-Xopencc)' is obsolete and ignored, when targeting compute_20, sm_20, or higher
+         GPUgenerateblobs.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUgenerateblobs.cu(296): warning : variable "covariance" was set but never used
+         
+         tmpxft_00001f4c_00000000-3_GPUgenerateblobs.compute_20.cudafe1.gpu
+         tmpxft_00001f4c_00000000-7_GPUgenerateblobs.compute_20.cudafe2.gpu
+         GPUgenerateblobs.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUgenerateblobs.cu(296): warning : variable "covariance" was set but never used
+         
+         tmpxft_00001f4c_00000000-0_GPUgenerateblobs.compute_10.cudafe1.gpu
+         tmpxft_00001f4c_00000000-11_GPUgenerateblobs.compute_10.cudafe2.gpu
+         GPUgenerateblobs.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUgenerateblobs.cu(296): warning : variable "covariance" was set but never used
+         
+         ptxas info    : Compiling entry function '_Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3expf
+             32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN84_INTERNAL_62_tmpxft_00001f4c_00000000_5_GPUgenerateblobs_compute_20_cpp1_ii_d27cfcac5roundEf
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas info    : Function properties for __exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float2int_rz
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float_as_int
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fmaf_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __int_as_float
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for fabsf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for truncf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 52 registers, 16000+0 bytes smem, 120 bytes cmem[0]
+         ptxas info    : Compiling entry function '_Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN84_INTERNAL_62_tmpxft_00001f4c_00000000_5_GPUgenerateblobs_compute_20_cpp1_ii_d27cfcac5roundEf
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas info    : Function properties for __builtin_round
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __double2hiint
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __double2loint
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float2int_rz
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float_as_int
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fma_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __hiloint2double
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __int_as_float
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for abs
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for fabs
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for fabsf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for truncf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 62 registers, 16000+0 bytes smem, 120 bytes cmem[0]
+         GPUgenerateblobs.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUgenerateblobs.cu(296): warning : variable "covariance" was set but never used
+         
+     1>ptxas C : /Users/prelich/AppData/Local/Temp/tmpxft_00001f4c_00000000-1_GPUgenerateblobs.compute_10.ptx, line 2079; warning : Double is not supported. Demoting to float
+         ptxas info    : Compiling entry function '_Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_10'
+         ptxas info    : Used 25 registers, 4+0 bytes lmem, 16088+16 bytes smem, 12 bytes cmem[1]
+         ptxas info    : Compiling entry function '_Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_10'
+         ptxas info    : Used 28 registers, 4+0 bytes lmem, 16088+16 bytes smem, 12 bytes cmem[1]
+         tmpxft_00001f4c_00000000-3_GPUgenerateblobs.compute_20.cudafe1.cpp
+         tmpxft_00001f4c_00000000-20_GPUgenerateblobs.compute_20.ii
+       CudaBuild:
+         Compiling CUDA source file GPUmultifit.cu...
+         cmd.exe /C "C:\Users\prelich\AppData\Local\Temp\6fd245695b504479bb4ccda095f53f55.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUmultifit.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUmultifit.cu"
+         
+         C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" --opencc-options -LIST:source=on -G  --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "x64\Debug\GPUmultifit.cu.obj" "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUmultifit.cu" 
+     1>CUDACOMPILE : nvcc warning : Option '--opencc-options (-Xopencc)' is obsolete and ignored, when targeting compute_20, sm_20, or higher
+         GPUmultifit.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(170): warning : variable "norm" was set but never used
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpx" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpy" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpsum" was declared but never referenced
+         
+         tmpxft_000019bc_00000000-3_GPUmultifit.compute_20.cudafe1.gpu
+         tmpxft_000019bc_00000000-7_GPUmultifit.compute_20.cudafe2.gpu
+         GPUmultifit.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(170): warning : variable "norm" was set but never used
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpx" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpy" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpsum" was declared but never referenced
+         
+         tmpxft_000019bc_00000000-0_GPUmultifit.compute_10.cudafe1.gpu
+         tmpxft_000019bc_00000000-11_GPUmultifit.compute_10.cudafe2.gpu
+         GPUmultifit.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(170): warning : variable "norm" was set but never used
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpx" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpy" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpsum" was declared but never referenced
+         
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitiPffiiiifffS_S_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z13kernel_MLEFitiPffiiiifffS_S_S_S_S_S_
+             376 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas info    : Function properties for _Z17kernel_IntGauss1Diff
+             16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_CenterofMass2DiPKfPfS1_
+             24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+         ptxas info    : Function properties for _Z21kernel_GaussFMaxMin2DifPfS_S_
+             64 bytes stack frame, 64 bytes spill stores, 64 bytes spill loads
+         ptxas info    : Function properties for _Z27kernel_DerivativeIntGauss1DiffffPfS_
+             48 bytes stack frame, 48 bytes spill stores, 48 bytes spill loads
+         ptxas info    : Function properties for _Z3expf
+             32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Function properties for _Z3logf
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas info    : Function properties for _Z3powff
+             128 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000019bc_00000000_5_GPUmultifit_compute_20_cpp1_ii_9e01a9393erfEf
+             48 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000019bc_00000000_5_GPUmultifit_compute_20_cpp1_ii_9e01a9395roundEf
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas info    : Function properties for __builtin_log2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fadd_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fdividef
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __float_as_int
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fmaf_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __fmul_rn
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for __int_as_float
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for exp2f
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for fabsf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for rsqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for truncf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 62 registers, 15488+0 bytes smem, 128 bytes cmem[0]
+         GPUmultifit.cu
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(170): warning : variable "norm" was set but never used
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpx" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpy" was declared but never referenced
+         
+     1>C:/Users/prelich/Documents/MATLAB/GPUmultiMLE/development/GPUmultiMLE_CUDA4.2/GPUmultiMLE_CUDA4.2/GPUmultifit.cu(183): warning : variable "tmpsum" was declared but never referenced
+         
+     1>ptxas C : /Users/prelich/AppData/Local/Temp/tmpxft_000019bc_00000000-1_GPUmultifit.compute_10.ptx, line 20742; warning : Double is not supported. Demoting to float
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitiPffiiiifffS_S_S_S_S_S_' for 'sm_10'
+         ptxas info    : Used 50 registers, 420+0 bytes lmem, 15584+16 bytes smem, 16 bytes cmem[1]
+         tmpxft_000019bc_00000000-3_GPUmultifit.compute_20.cudafe1.cpp
+         tmpxft_000019bc_00000000-20_GPUmultifit.compute_20.ii
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt MakeSubregions.cpp maxfilter.cpp unifilter.cpp
+         unifilter.cpp
+         maxfilter.cpp
+         MakeSubregions.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.embed.manifest.res" x64\Debug\GPUmultiMLE_CUDA4.2_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.mexw64" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\lib\x64" cudart.lib libmex.lib libmat.lib libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"matlab.def" /MANIFEST /ManifestFile:"x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.lib" /MACHINE:X64 /DLL x64\Debug\fitmultimain.cu.obj
+         x64\Debug\GPUCRLB.cu.obj
+         x64\Debug\GPUgenerateblobs.cu.obj
+         x64\Debug\GPUmultifit.cu.obj
+         x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.embed.manifest.res
+         x64\Debug\MakeSubregions.obj
+         x64\Debug\maxfilter.obj
+         x64\Debug\unifilter.obj
+            Creating library C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.lib and object C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.exp
+         GPUmultiMLE_CUDA4.2.vcxproj -> C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.mexw64
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.embed.manifest" /manifest x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.embed.manifest.res" x64\Debug\GPUmultiMLE_CUDA4.2_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.mexw64" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\lib\x64" cudart.lib libmex.lib libmat.lib libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"matlab.def" /MANIFEST /ManifestFile:"x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.lib" /MACHINE:X64 /DLL x64\Debug\fitmultimain.cu.obj
+         x64\Debug\GPUCRLB.cu.obj
+         x64\Debug\GPUgenerateblobs.cu.obj
+         x64\Debug\GPUmultifit.cu.obj
+         x64\Debug\GPUmultiMLE_CUDA4.2.mexw64.embed.manifest.res
+         x64\Debug\MakeSubregions.obj
+         x64\Debug\maxfilter.obj
+         x64\Debug\unifilter.obj
+            Creating library C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.lib and object C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.exp
+         GPUmultiMLE_CUDA4.2.vcxproj -> C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\x64\Debug\GPUmultiMLE_CUDA4.2.mexw64
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\GPUmultiMLE_CUDA4.2.unsuccessfulbuild".
+         Touching "x64\Debug\GPUmultiMLE_CUDA4.2.lastbuildstate".
+     1>Done Building Project "C:\Users\prelich\Documents\MATLAB\GPUmultiMLE\development\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2\GPUmultiMLE_CUDA4.2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.95

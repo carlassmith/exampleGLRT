@@ -1,0 +1,85 @@
+#
+# GPUGaussMLE compilation for linux and mac
+#
+# Mark J. Olah (mjo@cs.unm.edu)
+# 01-17-14
+#
+# Carlas Smith (carlas.smith@umassmed.edu)
+# (12-8-14)
+#
+# added/removed correct Libaries and flags
+#
+# README
+# Before use 
+#	1. Change Matlab and CUDA path
+#	2. Set 
+
+DEBUG=0
+CUDA = /opt/cuda-6.0
+MATLAB = /opt/Matlab-R2013b
+
+NVCC=nvcc
+GPP=g++
+GCC=gcc
+MEX=mex
+RM = rm -f \*.o
+
+CCFLAGS=-Wextra -Wall -mtune=native -fPIC
+MEXFLAGS:=-v -O -cxx
+NVCCFLAGS:= -m64 -O2 -v 
+NVCCFLAGS+= --compiler-options="-march=native -O2 -pipe"
+NVCCFLAGS+= --linker-options="-O1,--as-needed"
+
+# Debug build flags
+ifeq ($(DEBUG),1)
+      NVCCFLAGS += -G -g
+      MEXFLAGS+= -g
+      CCFLAGS += -ggdb -O2 -fno-omit-frame-pointer -fno-inline
+      TARGET := debug
+else
+      TARGET := release
+endif
+
+ALL_CCFLAGS :=
+ALL_CCFLAGS += $(NVCCFLAGS)
+ALL_CCFLAGS += $(addprefix -Xcompiler ,$(CCFLAGS))
+ALL_CCFLAGS += $(EXTRA_NVCCFLAGS)
+ALL_CCFLAGS += $(addprefix -Xcompiler ,$(EXTRA_CCFLAGS))
+
+ALL_LDFLAGS :=
+ALL_LDFLAGS += $(ALL_CCFLAGS)
+ALL_LDFLAGS += $(NVCCLDFLAGS)
+ALL_LDFLAGS += $(addprefix -Xlinker ,$(LDFLAGS))
+ALL_LDFLAGS += $(EXTRA_NVCCLDFLAGS)
+ALL_LDFLAGS += $(addprefix -Xlinker ,$(EXTRA_LDFLAGS))
+
+# Common includes and paths
+INCLUDES  := -I$(MATLAB)/extern/include -I$(CUDA)/include -I$(CUDA)/samples/common/inc
+LIBRARIES := -lcudart -lcufft 
+LIBDIRS:= $(CUDA)/lib64
+
+#File lists
+HEADERS=$(wildcard *.h)
+CUDA_HEADERS=$(wildcard *.cuh)
+CPP_SOURCE_FILES=$(wildcard *.cpp)
+CPP_OBJECTS=$(CPP_SOURCE_FILES:.cpp=.o)
+CUDA_SOURCE_FILES=$(wildcard *.cu)
+CUDA_OBJECTS=$(CUDA_SOURCE_FILES:.cu=.o)
+MEXFILE:=gpuGaussMLEv3.mexa64
+
+GENCODE_SM20 := -gencode arch=compute_20,code=sm_20
+GENCODE_SM30 := -gencode arch=compute_30,code=sm_30 -gencode arch=compute_35,code=\"sm_35,compute_35\"
+GENCODE_FLAGS := $(GENCODE_SM30)
+
+all: build
+
+build: $(MEXFILE)
+
+$(MEXFILE) : $(CPP_OBJECTS) $(CUDA_OBJECTS)
+	$(MEX) $(MEXFLAGS) -output $@ $^ $(INCLUDES) $(LIBS) -L$(LIBDIRS) $(LIBRARIES)
+
+${CUDA_OBJECTS} : %.o : %.cu $(CUDA_HEADERS)
+	$(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -L$(LIBDIRS) $(LIBRARIES) -o $@ -c $<
+
+${CPP_OBJECTS} : %.o : %.cpp $(HEADERS)
+	$(GPP) $(INCLUDES) $(CCFLAGS) -o $@ -c $<

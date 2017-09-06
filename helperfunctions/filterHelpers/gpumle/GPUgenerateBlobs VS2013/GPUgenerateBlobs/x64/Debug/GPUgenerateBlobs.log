@@ -1,0 +1,80 @@
+﻿Build started 8/11/2014 1:33:08 PM.
+     1>Project "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\GPUgenerateBlobs.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\kernel.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\wrapper.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmpc1633e9ec2dc4cc38542d53c2ce1197f.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\kernel.cu"
+         
+         C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\kernel.cu.obj "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\kernel.cu" 
+         ptxas info    : 11 bytes gmem, 8 bytes cmem[14]
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 52 registers, 8 bytes cumulative stack size, 16000 bytes smem, 120 bytes cmem[0]
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z5roundf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_00001e1c_00000000_8_kernel_compute_30_cpp1_ii_d8b2bffe3maxEfd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3expf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_20'
+         ptxas info    : Function properties for _Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 53 registers, 16000 bytes smem, 120 bytes cmem[0]
+         ptxas info    : 11 bytes gmem
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_30'
+         ptxas info    : Function properties for _Z29kernel_guassianintegrateblobsiiiPfS_S_S_S_S_S_S_S_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 52 registers, 8 bytes cumulative stack size, 16000 bytes smem, 408 bytes cmem[0]
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z4sqrtf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z5roundf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN74_INTERNAL_52_tmpxft_00001e1c_00000000_8_kernel_compute_30_cpp1_ii_d8b2bffe3maxEfd
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _Z3expf
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_' for 'sm_30'
+         ptxas info    : Function properties for _Z26kernel_guassiansampleblobsiiiPfS_S_S_S_S_S_S_S_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 53 registers, 16000 bytes smem, 408 bytes cmem[0]
+         kernel.cu
+       CudaBuild:
+         Compiling CUDA source file wrapper.cu...
+         cmd.exe /C "C:\Users\Carlas Smith\AppData\Local\Temp\tmpf59fb1f63bc54a36acc792b8724894be.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\wrapper.cu"
+         
+         C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o x64\Debug\wrapper.cu.obj "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\wrapper.cu" 
+         ptxas info    : 0 bytes gmem
+         ptxas info    : 0 bytes gmem
+         wrapper.cu
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt mexFunction.cpp
+         mexFunction.cpp
+     1>mexFunction.cpp(121): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>mexFunction.cpp(121): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.mexw64" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" cudart.lib libmex.lib libmat.lib libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"matlab.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.lib" /MACHINE:X64 /DLL x64\Debug\kernel.cu.obj
+         x64\Debug\wrapper.cu.obj
+         x64\Debug\mexFunction.obj
+            Creating library C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.lib and object C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.exp
+         GPUgenerateBlobs.vcxproj -> C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\x64\Debug\GPUgenerateBlobs.mexw64
+     1>Done Building Project "C:\Users\Carlas Smith\Desktop\single-molecule-detection\gpumle\GPUgenerateBlobs VS2013\GPUgenerateBlobs\GPUgenerateBlobs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.66

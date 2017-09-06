@@ -1,0 +1,36 @@
+﻿Build started 6/24/2014 1:11:34 PM.
+     1>Project "c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Win32\Debug\CUDA60MEXVS2012template1.unsuccessfulbuild".
+       AddCudaCompileDeps:
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" /I. /FIcuda_runtime.h /c "c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1\wrapper.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+       Skipping target "CudaBuild" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file wrapper.cu...
+         cmd.exe /C "C:\Users\smithc5\AppData\Local\Temp\tmpade7b836d97941af90e0ec8243c3b274.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o Win32\Debug\wrapper.cu.obj "c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1\wrapper.cu"
+         
+         c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi  /MDd /GR- " -o Win32\Debug\wrapper.cu.obj "c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1\wrapper.cu" 
+     1>nvcc : warning : The 'compute_10' and 'sm_10' architectures are deprecated, and may be removed in a future release.
+         ptxas : info : 0 bytes gmem
+         ptxas : info : 0 bytes gmem
+         ptxas : info : 0 bytes gmem
+         ptxas : info : Compiling entry function '__cuda_dummy_entry__' for 'sm_10'
+         ptxas : info : Used 0 registers
+         wrapper.cu
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt mexFunction.cpp
+         mexFunction.cpp
+     1>c:\users\smithc5\documents\visual studio 2012\projects\cuda60mexvs2012template1\cuda60mexvs2012template1\mexfunction.cpp(12): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
+     1>Done Building Project "c:\Users\smithc5\documents\visual studio 2012\Projects\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1\CUDA60MEXVS2012template1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:18.65

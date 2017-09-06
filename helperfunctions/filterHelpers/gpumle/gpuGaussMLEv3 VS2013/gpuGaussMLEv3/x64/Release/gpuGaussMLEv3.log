@@ -1,0 +1,79 @@
+﻿Build started 6/12/2017 6:30:56 PM.
+     1>Project "C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\gpuGaussMLEv3.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Carlas\AppData\Local\Temp\tmp5d977cce7e734e2e86bae3d716b177f2.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD /GR- " -o x64\Release\kernel.cu.obj "C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu"
+         
+         C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD /GR- " -o x64\Release\kernel.cu.obj "C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\kernel.cu" 
+         ptxas info    : 0 bytes gmem
+         ptxas info    : Compiling entry function '_Z18kernel_MLEFitSigmaPffiiS_S_S_i' for 'sm_20'
+         ptxas info    : Function properties for _Z18kernel_MLEFitSigmaPffiiS_S_S_i
+             360 bytes stack frame, 20 bytes spill stores, 16 bytes spill loads
+         ptxas info    : Used 61 registers, 84 bytes cmem[0], 152 bytes cmem[16]
+         ptxas info    : Compiling entry function '_Z15kernel_MLERatioPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z15kernel_MLERatioPKffiiPfS1_S1_i
+             40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 39 registers, 84 bytes cmem[0], 132 bytes cmem[16]
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i
+             720 bytes stack frame, 308 bytes spill stores, 276 bytes spill loads
+         ptxas info    : Used 63 registers, 92 bytes cmem[0], 152 bytes cmem[16]
+         ptxas info    : Compiling entry function '_Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i
+             448 bytes stack frame, 112 bytes spill stores, 168 bytes spill loads
+         ptxas info    : Used 62 registers, 92 bytes cmem[0], 152 bytes cmem[16]
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z13kernel_MLEFitPKffiiPfS1_S1_i
+             264 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 57 registers, 84 bytes cmem[0], 152 bytes cmem[16]
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i' for 'sm_20'
+         ptxas info    : Function properties for _Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i
+             488 bytes stack frame, 60 bytes spill stores, 56 bytes spill loads
+         ptxas info    : Used 63 registers, 84 bytes cmem[0], 152 bytes cmem[16]
+         ptxas info    : 0 bytes gmem
+         ptxas info    : Compiling entry function '_Z18kernel_MLEFitSigmaPffiiS_S_S_i' for 'sm_30'
+         ptxas info    : Function properties for _Z18kernel_MLEFitSigmaPffiiS_S_S_i
+             368 bytes stack frame, 32 bytes spill stores, 28 bytes spill loads
+         ptxas info    : Used 63 registers, 372 bytes cmem[0], 608 bytes cmem[2]
+         ptxas info    : Compiling entry function '_Z15kernel_MLERatioPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z15kernel_MLERatioPKffiiPfS1_S1_i
+             40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 40 registers, 372 bytes cmem[0], 588 bytes cmem[2]
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z20kernel_MLEFit3DSigmaPKfffiiiPfS1_S1_i
+             720 bytes stack frame, 292 bytes spill stores, 260 bytes spill loads
+         ptxas info    : Used 63 registers, 380 bytes cmem[0], 608 bytes cmem[2]
+         ptxas info    : Compiling entry function '_Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z15kernel_MLEFit3DPKfffiiiPfS1_S1_i
+             456 bytes stack frame, 116 bytes spill stores, 172 bytes spill loads
+         ptxas info    : Used 62 registers, 380 bytes cmem[0], 608 bytes cmem[2]
+         ptxas info    : Compiling entry function '_Z13kernel_MLEFitPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z13kernel_MLEFitPKffiiPfS1_S1_i
+             264 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 58 registers, 372 bytes cmem[0], 608 bytes cmem[2]
+         ptxas info    : Compiling entry function '_Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i' for 'sm_30'
+         ptxas info    : Function properties for _Z20kernel_MLEFitSigmaXXPKffiiPfS1_S1_i
+             488 bytes stack frame, 60 bytes spill stores, 56 bytes spill loads
+         ptxas info    : Used 63 registers, 372 bytes cmem[0], 608 bytes cmem[2]
+         kernel.cu
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt mexFunction.cpp
+         mexFunction.cpp
+     1>mexFunction.cpp(257): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.mexw64" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" cudart.lib libmex.lib libmat.lib libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"matlab.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.lib" /MACHINE:X64 /DLL x64\Release\kernel.cu.obj
+         x64\Release\wrapper.cu.obj
+         x64\Release\gpuGaussMLEv3.res
+         x64\Release\mexFunction.obj
+            Creating library C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.lib and object C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.exp
+         Generating code
+         Finished generating code
+         gpuGaussMLEv3.vcxproj -> C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\x64\Release\gpuGaussMLEv3.mexw64
+     1>Done Building Project "C:\Users\Carlas\Desktop\exampleglrt\helperfunctions\filterHelpers\gpumle\gpuGaussMLEv3 VS2013\gpuGaussMLEv3\gpuGaussMLEv3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.26
