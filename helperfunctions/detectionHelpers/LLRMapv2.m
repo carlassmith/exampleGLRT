@@ -193,7 +193,11 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
                 ll(:,:,i-1) = label(logical(hh(:,:,i)),1);
             end
                 msrResults = measure(squeeze(ll(:,:,i-1)), permute(squeeze(process(szx,szy,i)),[2 1 3]), ({'Gravity','P2A','Size'}));
-                a=msrResults.Size> minPixels;
+                if isfield(msrResults,'Size')
+                    a=msrResults.Size> minPixels;
+                else
+                    a=[];
+                end
                 subsetA = msrResults(a);
                 coords =cat(1,coords, [subsetA.Gravity'  (i-1).*ones(size( subsetA.Gravity,2),1)]);
                 circularity = cat(1,circularity,subsetA.P2A');
