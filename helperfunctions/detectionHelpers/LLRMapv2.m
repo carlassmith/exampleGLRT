@@ -80,6 +80,7 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
     szy = ybegin:1:yend;
     szx=szx(1:floor(size(szx,2)/4)*4);
     szy=szy(1:floor(size(szy,2)/4)*4);
+    
     Nloops=ceil(size(process,3)/maxFramesPerBlock); %number of loops
     pfa =ones([length(szy) length(szx) size(process,3)]);
     hh =false([length(szy) length(szx) size(process,3)]);
@@ -89,7 +90,7 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
         en=min(nn*maxFramesPerBlock,size(process,3));
         idx = st:en;
         [Ym,Xm,Zm] = meshgrid(szx,szy,idx);
-    %     scatter(reshape(Ym(:,:,1),[numel(Ym(:,:,1)) 1]),reshape(Xm(:,:,1),[numel(Xm(:,:,1)) 1]))
+        
         XX = reshape(Xm,[ numel(Xm) 1]);
         YY = reshape(Ym,[ numel(Ym) 1]); 
         ZZ = reshape(Zm,[ numel(Zm) 1]);
@@ -102,12 +103,10 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
 
         n_smooth=2;
         if ismatrix(process)
-    %         cutProcess = double(cut(permute(dip_image(process),[2 1 3]),[size(Ym,1) size(Ym,2)]));
             cutProcess = process(szx,szy);
             flags =[1 1];
         elseif ndims(process) == 3
             cutProcess = process(szx,szy,idx);
-    %         cutProcess = double(cut(permute(dip_image(process),[2 1 3]),[size(Ym,1) size(Ym,2) size(Ym,3)]));
             flags =[1 1 0];
         else
             error('Only 2D and 3D image stacks are supported')
@@ -143,14 +142,7 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
         else
             idxIm = find(logical(permute(locIm,[2 1])));
         end
-    %     xxs=XX(idxIm);
-    %     yys=YY(idxIm);    
-    %     imgcomp = zeros(size(process));
-    %     imgcomp(szx,szy,:)=locIm;
-    %     dipshow(max(imgcomp,[],3),'lin')
-    %     hold on
-    %     scatter(reshape(xxs(:,:,1)-1,[numel(xxs(:,:,1)) 1]),reshape(yys(:,:,1)-1,[numel(yys(:,:,1)) 1]),'marker','.')
-    %     
+        
         [ ROIStack ] = cMakeSubregions(YY(idxIm)-1,XX(idxIm)-1,ZZ(idxIm)-1,3*(2*PSFSigma+1),single(process));
         [~, ~, LLr] = gpuGaussMLEv3(permute(single(ROIStack),[2 1 3 4]),single(PSFSigma),iterations,0,false,maxCudaFits.*ones(1,gpuDeviceCount)); 
 
@@ -196,7 +188,7 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
                 if isfield(msrResults,'Size')
                     a=msrResults.Size> minPixels;
                 else
-                    a=[];
+                    a=false(length(msrResults),1);
                 end
                 subsetA = msrResults(a);
                 coords =cat(1,coords, [subsetA.Gravity'  (i-1).*ones(size( subsetA.Gravity,2),1)]);
@@ -217,10 +209,10 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
         if ismatrix(process)
             coords=[coords zeros(size(coords,1),1)];
         end
-        pH1 =1-pfa(im_max); % stretch(double(),0,100,0,1);
+        pH1 =1-pfa(im_max);
     end
-    disp(['Done!'])
-%     dipshow(hh+double(coord2image(coords,[size(hh,2) size(hh,1) size(hh,3)])),'lin')
+    disp('Done!')
+
     dectectionPar.pfa_adj=pfa; 
     dectectionPar.pH1 = double(pH1)';
     cutProcess=process(szx,szy,:);
