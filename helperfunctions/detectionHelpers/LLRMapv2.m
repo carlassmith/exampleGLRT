@@ -187,14 +187,12 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
                 msrResults = measure(squeeze(ll(:,:,i-1)), permute(squeeze(process(szx,szy,i)),[2 1 3]), ({'Gravity','P2A','Size'}));
                 if isfield(msrResults,'Size')
                     a=msrResults.Size> minPixels;
-                else
-                    a=false(length(msrResults),1);
+                    subsetA = msrResults(a);
+                    coords =cat(1,coords, [subsetA.Gravity'  (i-1).*ones(size( subsetA.Gravity,2),1)]);
+                    circularity = cat(1,circularity,subsetA.P2A');
+                    clusterSize = cat(1,clusterSize,subsetA.Size');
+                    pH1 = cat(1,pH1,(min(max(2.*subsetA.Size'./((2*(PSFSigma))^2*pi),0),1)));     
                 end
-                subsetA = msrResults(a);
-                coords =cat(1,coords, [subsetA.Gravity'  (i-1).*ones(size( subsetA.Gravity,2),1)]);
-                circularity = cat(1,circularity,subsetA.P2A');
-                clusterSize = cat(1,clusterSize,subsetA.Size');
-                pH1 = cat(1,pH1,(min(max(2.*subsetA.Size'./((2*(PSFSigma))^2*pi),0),1)));     
             if mod(i,maxFramesPerBlock) == 0
                 disp(['slice ' num2str(i) ' of ' num2str(size(hh,3)) ' frames'])
             end
