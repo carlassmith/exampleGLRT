@@ -165,7 +165,7 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
 
       pfa(:,:,idx) = pfatemp;
       hh(:,:,idx)  = hhtemp;
-      disp([num2str(nn*maxFramesPerBlock) ' of ' num2str(size(process,3)) ' frames'])
+      disp([num2str(min(nn*maxFramesPerBlock,size(process,3))) ' of ' num2str(size(process,3)) ' frames'])
     end
     coords=[];
     circularity=[];
@@ -176,8 +176,8 @@ function [coords,dectectionPar,cutProcess] = LLRMapv2(process,PSFSigma,minPixels
     if ~isempty(minPixels)
         ll=newim([size(hh,2) size(hh,1) size(hh,3)],'sint32');
         for i=1:size(hh,3)
-            if split && sum(sum(hh(:,:,i))) > 0
-                h=squeeze(bclosing(hh(:,:,i)));
+            h=squeeze(bclosing(hh(:,:,i)));
+            if split && sum(sum(hh(:,:,i))) > 0 && sum(sum(h)) > 0
                 D = -dt(h);
                 D(~h) = +Inf;
                 ll(:,:,i-1) = label(~dipwatershed(double(D),1).*squeeze(hh(:,:,i)),1);

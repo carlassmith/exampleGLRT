@@ -22,9 +22,9 @@ addpath(genpath('helperfunctions'))
 
 %% Load data
 
-fileStructure(1).Geller = './data/grid_082015-1.tif';
-fileStructure(1).Dark = './data/dark-1.tif';
-fileStructure(1).Data = './data/merged3-1.tif';
+fileStructure(1).Geller = './data/movie_0005.tif';
+fileStructure(1).Dark = './data/movie_0001dark.tif';
+fileStructure(1).Data = './data/Carlas-data.tif';
 
 %% camera calibration
 %out(2) the 1/slope of the fit in [photons per ADU]: conversion ADU =
@@ -38,7 +38,7 @@ bg = double(cell2mat(permute(a{1}(1:min(100,end),1),[3 2 1])));
 
 %%
 PSFSigma=1.39; %size of PSF
-nFrames = 20; %maximum number of frames to be processed
+nFrames = size(a{1},1); %maximum number of frames to be processed
 
 a = bfopen( [ fileStructure(1).Data] );
 data = double(cell2mat(permute(a{1}(1:min(end,nFrames),1),[3 2 1])));
@@ -46,8 +46,8 @@ data = double(cell2mat(permute(a{1}(1:min(end,nFrames),1),[3 2 1])));
 %% Camera callibration option 1
 % Tradional method need aditional data in which offset and gain are
 % constant
-out = cal_readnoise(geller, bg);
-dataTemp=(data-repmat(mean(bg,3),[1 1 size(data,3)]))*out(2);
+out = cal_readnoise(geller(129:384,1:256,1:end), bg(129:384,1:256,1:end));
+dataCam1=(data-repmat(mean(bg(129:384,1:256,1:end),3),[1 1 size(data,3)]))*out(2);
 
 % %% Camera callibration option 2
 % 
@@ -58,9 +58,6 @@ dataTemp=(data-repmat(mean(bg,3),[1 1 size(data,3)]))*out(2);
 % dataTemp = (data-mean(o))./mean(g);
 
 %% GLRT Based Detection
-dataCam1 = dataTemp(1:450,1:512,1:min(end,nFrames));
-clear dataTemp
-
 
 [coordsCam1,detParCam1,cutProcessCam1] = LLRMapv2(dataCam1,PSFSigma,[],-2);
 
@@ -85,7 +82,7 @@ paramsPreFilterFits = getDefaultParamsPreFilterFits;
 
 % Set probablity of false detection to 0.05%
 
-paramsPreFilterFits.pH1Min = 0.95;
+paramsPreFilterFits.pH1Min = 0.05;
 [ maskPreFiltCam1 ] =  preFilterFits(coordsCam1,detParCam1,paramsPreFilterFits);
 
 % Plot pre-filtered spots
@@ -93,7 +90,7 @@ optionsLLR = dipSubLoc2DSetOptions;
 optionsLLR.BoxCenters = [coordsCam1(maskPreFiltCam1,2) coordsCam1(maskPreFiltCam1,1) coordsCam1(maskPreFiltCam1,3)];
 optionsLLR.BoxSize = 2*(3*PSFSigma+1).*[1 1];
 C=jet(256); 
-% index = double(floor(255.*(detParCam1.pH1(1,maskPreFiltCam1)))+1);
+
 index = double(floor(255.*(1-(1-detParCam1.pH1(maskPreFiltCam1))./(1-paramsPreFilterFits.pH1Min)))+1);
 optionsLLR.BoxColor = C(index,:);
 optionsLLR.plotBoxes = 1;
@@ -109,6 +106,7 @@ paramsFit = getDefaultParamsFit;
 %     MaxCudaFits: 100000
 %     PSFSigma: 1.3900
 %     BoxSize: 11.3400
+paramsFit.PSFSigma = PSFSigma;
 coodsUnCut=round(coordsCam1+(1.5*(2*PSFSigma+1)-0.5).*[ones(size(coordsCam1,1),1) ones(size(coordsCam1,1),1) zeros(size(coordsCam1,1),1)]);
 paramsFit.FitSigma=true;
 
@@ -133,6 +131,7 @@ paramsFilterFits = getDefaultParamsFilterFits;
 % Single Pixel Likelihood Ratio estimates can also be
 % used as filtering
 paramsFilterFits.MaxPFAValue=0.05;
+paramsFilterFits.MinPhotons=100;
 [ maskFilt1 ] =  filterFits(rawFitResultsCam1,paramsFilterFits);
 
 % Plot filtered spots
@@ -140,7 +139,7 @@ optionsLLR = dipSubLoc2DSetOptions;
 optionsLLR.BoxCenters = [rawFitResultsCam1.Coord(maskPreFiltCam1&maskFilt1,1) rawFitResultsCam1.Coord(maskPreFiltCam1&maskFilt1,2) rawFitResultsCam1.Frame(maskPreFiltCam1&maskFilt1)];
 optionsLLR.BoxSize = 2*(3*PSFSigma+1).*[1 1];
 C=jet(256); 
-% index = double(floor(255.*(min(rawFitResultsCam1.LL(3,:),1)))+1);
+
 index = double(floor(255.*(min(rawFitResultsCam1.PFA(maskPreFiltCam1&maskFilt1)./paramsFilterFits.MaxPFAValue,1)))+1);
 optionsLLR.BoxColor = C(index,:);
 optionsLLR.plotBoxes = 1;
